@@ -1,0 +1,15 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.music">
+
+    <application>
+        <service
+            android:name="com.example.music.service.MusicService"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.example.music.service.MusicService.Connect" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </service>
+    </application>
+</manifest>

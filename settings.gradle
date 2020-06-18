@@ -1,0 +1,3 @@
+include ':music'
+include ':app'
+rootProject.name = "AIdlMusicDemo"
